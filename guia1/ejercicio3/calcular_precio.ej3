@@ -1,0 +1,13 @@
+Proceso calcular_precio
+	Definir precio,contado,tres,seis,doce Como Real;
+	Escribir 'Ingrese el precio del producto';
+	Leer precio;
+	contado<- precio * 0.9 ;
+	tres <- ( precio*1.062)/3;
+	seis <- ( precio*1.18) /6;
+	doce <- ( precio*1.41)/12;
+	Escribir 'Precio de contado es $',contado;
+	Escribir 'En 3 cuotas de $',tres;
+	Escribir 'En 6 cuotas de $',seis;
+	Escribir 'O 12 cuotas de $',doce;
+FinProceso

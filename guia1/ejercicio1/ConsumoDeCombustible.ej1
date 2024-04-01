@@ -1,0 +1,9 @@
+Proceso ConsumoDeCombustible
+	definir KmRec,Litros,consumo como real;
+	Escribir 'Escribir los Km realizados';
+	Leer KmRec;
+	Escribir 'Escribir litros utilizados';
+	Leer Litros;
+	consumo<- KmRec/Litros;
+	Escribir 'Su vehiculo consume ', consumo,' L por kilometro';
+FinProceso

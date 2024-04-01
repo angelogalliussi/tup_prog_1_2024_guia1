@@ -1,0 +1,19 @@
+Proceso calcular_porcion
+	definir edades, edad1, edad2, edad3, edad4 como entero;
+	definir total, porcion,mesada1,mesada2,mesada3,mesada4 Como Real;
+	Escribir 'Escriba la edad de las 4 nenas';
+	Leer edad1, edad2, edad3, edad4;
+	Escribir 'Escribir monto total a repartir';
+	Leer total;
+	edades = edad1 + edad2 + edad3 + edad4;
+	porcion = total / edades;
+	mesada1 <- porcion * edad1;
+	mesada2 <- porcion * edad2;
+	mesada3 <- porcion * edad3;
+	mesada4 <- porcion * edad4;
+	Escribir 'La porcion es de ',trunc(porcion*100)/100;
+	Escribir 'A la primer nena le corresponde ',trunc(mesada1), ' pesos por mes';
+	Escribir 'A la segunda nena le corresponde ',trunc(mesada2), ' pesos por mes';
+	Escribir 'A la tercera le corresponde ',trunc(mesada3),' pesos por mes';
+	Escribir 'Y a la cuarta le corresponde ',trunc(mesada4),' pesos por mes';
+FinProceso

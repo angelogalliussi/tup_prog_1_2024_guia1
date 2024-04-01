@@ -1,0 +1,24 @@
+Proceso Fertilizante
+	Definir terreno,largo,ancho Como Entero;
+	Definir sale1,sale2,total,rinde1,rinde2,litros1,litros2,costo1,costo2 Como real;
+	Escribir 'Ingrese el largo del terreno';
+	Leer largo;
+	Escribir 'Ingresar ancho del terreno';
+	Leer ancho;
+	Escribir 'Ingrese el costo del fertilizante 1';
+	Leer costo1;
+	Escribir 'Cuantos m2 rinde el fertilizante 1';
+	Leer rinde1;
+	Escribir 'Ingrese el costo del fertilizante 2';
+	Leer costo2;
+	Escribir 'Cuantos m2 rinde el fertilizante 2';
+	Leer rinde2;
+	terreno=largo * ancho;
+	litros1<-terreno/rinde1;
+	litros2<-terreno/rinde2;
+	sale1 <- litros1*costo1;
+	sale2 <- litros2*costo2;
+	total <- sale1 + sale2;
+	Escribir 'El terreno tiene ',terreno,' m2 y va a necesitar $',trunc(total);
+	Escribir 'El fertilizante 1 le va a salir $',trunc(sale1),' y el segundo $',trunc(sale2);
+FinProceso
